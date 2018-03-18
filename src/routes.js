@@ -1,5 +1,5 @@
 import App from "./components/App";
-import Home from "./components/Home";
+import StudentDashboard from "./components/student/StudentDashboard";
 
 const routes = [
   {
@@ -7,8 +7,8 @@ const routes = [
     component: App
   },
   {
-    path: "/home",
-    component: Home
+    path: "/dashboard",
+    component: StudentDashboard
   }
 ];
 export default routes;

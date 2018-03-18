@@ -1,20 +1,19 @@
 import React, { Component } from "react";
-import { connect } from "react-redux"; /* code change */
-import * as Actions from "../redux/actions/StudentAction";
+import { connect } from "react-redux";
+import * as Actions from "../actions/StudentActions";
 import { withRouter } from "react-router-dom";
 
 class App extends Component {
   render() {
-    console.log("props", this.props);
     return (
-      <div className="App">
+      <div>
         <button
           onClick={() => {
-            this.props.StudentAction("gaurav");
-            this.props.history.push({ pathname: `/home` });
+            this.props.studentNameChangeAction("gaurav");
+            this.props.history.push({ pathname: `/dashboard` });
           }}
         >
-          Show
+          Dashboard
         </button>
         <h2>{this.props.name}</h2>
       </div>
@@ -24,7 +23,7 @@ class App extends Component {
 
 export default connect(
   state => ({
-    name: state.StudentReducer.name
+    name: state.student.name
   }),
   Actions
 )(withRouter(App));
