@@ -1,5 +1,5 @@
 const initialStoreState = {
-  student: { name: "" }
+  books: []
 };
 
 export default initialStoreState;

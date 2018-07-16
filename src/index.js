@@ -6,6 +6,7 @@ import configureStore from "./store/ConfigureStore";
 import { Provider } from "react-redux";
 import routes from "./routes";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import "antd/dist/antd.css";
 
 const routeComponents = routes.map(({ path, component }, key) => (
   <Route exact path={path} component={component} key={key} />
