@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import BookList from "./book/BookList";
+import Demo from "./Demo";
 
 class App extends Component {
+  showResults = values => {
+    console.log("values ", values);
+  };
   render() {
     return (
       <div>
-        <BookList />
+        <Demo onSubmit={this.showResults} />
       </div>
     );
   }
