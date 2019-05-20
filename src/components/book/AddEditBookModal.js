@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Input, Select, Modal, message } from "antd";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { addBookAction, updateBookAction } from "../../actions/BookActions";
+import { addBookAction, updateBookAction } from "../../actions/bookActions";
 
 const data = {
   authors: [

@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import bookReducer from "./BookReducer";
+import bookReducer from "./bookReducer";
 
 const rootReducer = combineReducers({
   books: bookReducer

@@ -1,14 +1,14 @@
-import * as BookActionTypes from "./BookActionTypes";
+import * as bookActionTypes from "./bookActionTypes";
 
 export const addBookAction = rData => {
   return {
-    type: BookActionTypes.ACTION_ADD_BOOK,
+    type: bookActionTypes.ACTION_ADD_BOOK,
     addBook: rData
   };
 };
 export const updateBookAction = rData => {
-  return { type: BookActionTypes.ACTION_UPDATE_BOOK, updateBook: rData };
+  return { type: bookActionTypes.ACTION_UPDATE_BOOK, updateBook: rData };
 };
 export const deleteBookAction = rData => {
-  return { type: BookActionTypes.ACTION_DELETE_BOOK, deleteBook: rData };
+  return { type: bookActionTypes.ACTION_DELETE_BOOK, deleteBook: rData };
 };

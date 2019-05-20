@@ -1,5 +1,5 @@
-import * as BookActionTypes from "../actions/BookActionTypes";
-import initialStoreState from "../store/InitialStoreState";
+import * as BookActionTypes from "../actions/bookActionTypes";
+import initialStoreState from "../store/initialStoreState";
 
 const bookReducer = (state = initialStoreState.books, action) => {
   switch (action.type) {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Table, Icon, Tooltip, Popconfirm } from "antd";
 import AddEditBookModal from "./AddEditBookModal";
 import { connect } from "react-redux";
-import { deleteBookAction } from "../../actions/BookActions";
+import { deleteBookAction } from "../../actions/bookActions";
 
 class BookList extends Component {
   constructor(props) {
