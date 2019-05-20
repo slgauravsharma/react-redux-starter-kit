@@ -6,4 +6,5 @@ const routes = [
     component: App
   },
 ];
+
 export default routes;
