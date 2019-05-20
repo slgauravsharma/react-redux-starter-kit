@@ -1,4 +1,0 @@
-export const ACTION_LIST_BOOK = "LIST_BOOK";
-export const ACTION_ADD_BOOK = "ADD_BOOK";
-export const ACTION_UPDATE_BOOK = "UPDATE_BOOK";
-export const ACTION_DELETE_BOOK = "DELETE_BOOK";
